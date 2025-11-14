@@ -59,6 +59,7 @@ dependencies = [
  "cfg-if",
  "crossbeam-utils",
  "equivalent",
+ "hashbrown 0.16.0",
  "lock_api",
  "parking_lot_core",
  "rayon",
@@ -83,6 +84,14 @@ name = "hashbrown"
 version = "0.15.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bf151400ff0baff5465007dd2f3e717f3fe502074ca563069ce3a6629d07b289"
+
+[[package]]
+name = "hashbrown"
+version = "0.16.0"
+source = "git+https://github.com/meta-introspector/hashbrown?branch=feature/CRQ-016-nixify#061804bc54744c8b2acdb273f0cfab70a11829b2"
+dependencies = [
+ "parking_lot_core",
+]
 
 [[package]]
 name = "libc"
@@ -209,7 +218,7 @@ version = "0.1.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e29e4cac0f1acdbbe7b4deb46876a04246dc6abf60b6f2587bef8ae327cd134c"
 dependencies = [
- "hashbrown",
+ "hashbrown 0.15.2",
  "typesize-derive",
 ]
 
