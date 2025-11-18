@@ -2,3 +2,4 @@
 **/*.rs.bk
 vendor
 result-bin
+process-repo.log
