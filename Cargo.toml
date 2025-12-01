@@ -21,6 +21,7 @@ all = [#"raw-api", #"typesize", #"serde",
 raw-api = []
 typesize = [#"dep:typesize"
 ]
+inline= []
 inline-more = ["hashbrown/inline-more"]
 
 [dependencies]
